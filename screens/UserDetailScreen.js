@@ -46,11 +46,11 @@ const UserDetailScreen = (props) => {
 
   const openConfirmationAlert = () => {
     Alert.alert(
-      "Removing the User",
-      "Are you sure?",
+      "Borrar Usuario",
+      "seguro?",
       [
-        { text: "Yes", onPress: () => deleteUser() },
-        { text: "No", onPress: () => console.log("canceled") },
+        { text: "Si", onPress: () => deleteUser() },
+        { text: "No", onPress: () => console.log("cancelado") },
       ],
       {
         cancelable: true,
@@ -112,13 +112,13 @@ const UserDetailScreen = (props) => {
       </View>
       <View style={styles.btn}>
         <Button
-          title="Delete"
+          title="Borrar"
           onPress={() => openConfirmationAlert()}
           color="#E37399"
         />
       </View>
       <View>
-        <Button title="Update" onPress={() => updateUser()} color="#19AC52" />
+        <Button title="Actualizar" onPress={() => updateUser()} color="#19AC52" />
       </View>
     </ScrollView>
   );
