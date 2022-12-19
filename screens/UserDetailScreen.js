@@ -56,7 +56,7 @@ const UserDetailScreen = (props) => {
         cancelable: true,
       }
     );
-  };
+  }; 
 
   const updateUser = async () => {
     const userRef = firebase.db.collection("users").doc(user.id);
